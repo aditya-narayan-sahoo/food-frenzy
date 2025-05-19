@@ -1,6 +1,12 @@
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/Home";
+
 const App = () => {
   return (
-    <div className="text-3xl text-center underline">Welcome to Food Frenzy</div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 };
 
